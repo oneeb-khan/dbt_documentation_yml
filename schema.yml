@@ -1,0 +1,6621 @@
+version: 2
+models:
+- name: account
+  description: ''
+  columns:
+  - name: base_currency
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: title
+    description: ''
+  - name: total_paid_credits
+    description: ''
+  - name: total_reward_points
+    description: ''
+  - name: type
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_id
+    description: ''
+- name: activity
+  description: ''
+  columns:
+  - name: action_type
+    description: ''
+  - name: context_id
+    description: ''
+  - name: context_type
+    description: ''
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: payload
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: timestamp
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_id
+    description: ''
+- name: all_products_with_sales
+  description: ''
+  columns:
+  - name: barcode
+    description: ''
+  - name: bulk_package_size
+    description: ''
+  - name: category
+    description: ''
+  - name: class
+    description: ''
+  - name: daily_sales
+    description: ''
+  - name: daily_sales_adj
+    description: ''
+  - name: days
+    description: ''
+  - name: db_desired_inventory_level
+    description: ''
+  - name: db_min_inventory_level
+    description: ''
+  - name: db_soft_buffer_level
+    description: ''
+  - name: distributor
+    description: ''
+  - name: distributor_cost_price
+    description: ''
+  - name: distributor_id
+    description: ''
+  - name: first_check_in
+    description: ''
+  - name: growth_factor
+    description: ''
+  - name: high_perishable
+    description: ''
+  - name: hours_oos_adj
+    description: ''
+  - name: in_active
+    description: ''
+  - name: in_active_reason
+    description: ''
+  - name: is_centralized
+    description: ''
+  - name: is_dead_sku
+    description: ''
+  - name: mrp
+    description: ''
+  - name: pct_margin_post_tax
+    description: ''
+  - name: product_id
+    description: ''
+  - name: product_name
+    description: ''
+  - name: quantity_sold
+    description: ''
+  - name: revenue
+    description: ''
+  - name: rn
+    description: ''
+  - name: selling_price
+    description: ''
+  - name: sku
+    description: ''
+  - name: sku_type
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: status
+    description: ''
+  - name: subcategory
+    description: ''
+  - name: total_orders
+    description: ''
+  - name: unique_orders
+    description: ''
+  - name: units
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: GROUP
+    description: ''
+- name: aov
+  description: ''
+  columns:
+  - name: amount
+    description: ''
+  - name: date
+    description: ''
+  - name: day_of_week_iso
+    description: ''
+  - name: month
+    description: ''
+  - name: sum_amount
+    description: ''
+  - name: week
+    description: ''
+  - name: year
+    description: ''
+- name: app_banner
+  description: ''
+  columns:
+  - name: categoryid
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: entityid
+    description: ''
+  - name: id
+    description: ''
+  - name: imageurl
+    description: ''
+  - name: is_active
+    description: ''
+  - name: purpose
+    description: ''
+  - name: rank
+    description: ''
+  - name: redirectiontype
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: type
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: attendance_data
+  description: ''
+  columns:
+  - name: attendance_time
+    description: ''
+  - name: attendance_type
+    description: ''
+  - name: checkin_time
+    description: ''
+  - name: checkout_time
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_attendance_id
+    description: ''
+  - name: user_id
+    description: ''
+- name: base_oos
+  description: ''
+  columns:
+  - name: created_at_in_utc
+    description: ''
+  - name: day
+    description: ''
+  - name: hour_oos
+    description: ''
+  - name: id
+    description: ''
+  - name: next_time_in_utc
+    description: ''
+  - name: product_id
+    description: ''
+  - name: unique_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: base_oos_v_2
+  description: ''
+  columns:
+  - name: day_local
+    description: ''
+  - name: end_time_utc
+    description: ''
+  - name: hours_oos_local_16
+    description: ''
+  - name: hours_oos_local_24
+    description: ''
+  - name: oos_id
+    description: ''
+  - name: product_id
+    description: ''
+  - name: start_time_utc
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: _ic_id
+    description: ''
+  - name: _should_re_evaluate
+    description: ''
+  - name: _unique_id
+    description: ''
+- name: brand
+  description: ''
+  columns:
+  - name: company_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: id
+    description: ''
+  - name: is_default
+    description: ''
+  - name: name
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: break_time_log_grocer
+  description: ''
+  columns:
+  - name: comments
+    description: ''
+  - name: created_at
+    description: ''
+  - name: created_by_id
+    description: ''
+  - name: duration
+    description: ''
+  - name: id
+    description: ''
+  - name: rider_break_id
+    description: ''
+  - name: source
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: break_time_log_workforce_management
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: meta
+    description: ''
+  - name: shift_worker_id
+    description: ''
+  - name: source
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: timestamp
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_status
+    description: ''
+- name: cartonization
+  description: ''
+  columns:
+  - name: barcode
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: expiry_date
+    description: ''
+  - name: for_packaging
+    description: ''
+  - name: fulfillment_request_item_id
+    description: ''
+  - name: id
+    description: ''
+  - name: loader_id
+    description: ''
+  - name: purchase_order_item_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: transported_quantity
+    description: ''
+  - name: truck_number
+    description: ''
+  - name: units
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: carton_placement
+  description: ''
+  columns:
+  - name: barcode
+    description: ''
+  - name: carton_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: damaged_item_count
+    description: ''
+  - name: expired_item_count
+    description: ''
+  - name: expiry_date
+    description: ''
+  - name: fulfillment_request_item_id
+    description: ''
+  - name: id
+    description: ''
+  - name: is_moved_to_open_item
+    description: ''
+  - name: item_not_found_count
+    description: ''
+  - name: loader_id
+    description: ''
+  - name: placement_order_id
+    description: ''
+  - name: placer_id
+    description: ''
+  - name: product_id
+    description: ''
+  - name: purchase_order_item_id
+    description: ''
+  - name: purchase_order_trip_id
+    description: ''
+  - name: return_order_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: trolley_lot_id
+    description: ''
+  - name: truck_number
+    description: ''
+  - name: units
+    description: ''
+  - name: units_picked
+    description: ''
+  - name: units_placed
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: category
+  description: ''
+  columns:
+  - name: category_sort
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: id
+    description: ''
+  - name: image_url
+    description: ''
+  - name: is_active
+    description: ''
+  - name: meta_data
+    description: ''
+  - name: name
+    description: ''
+  - name: parent_id
+    description: ''
+  - name: rack
+    description: ''
+  - name: seo_keywords
+    description: ''
+  - name: slug
+    description: ''
+  - name: sort_order
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: woocommerce_id
+    description: ''
+- name: centrlalized_top_products
+  description: ''
+  columns:
+  - name: active_customers
+    description: ''
+  - name: active_customers_rank
+    description: ''
+  - name: mothership_id
+    description: ''
+  - name: name
+    description: ''
+  - name: product_id
+    description: ''
+  - name: product_revenue
+    description: ''
+  - name: product_revenue_rank
+    description: ''
+  - name: weighted_average
+    description: ''
+  - name: weighted_rank
+    description: ''
+- name: city
+  description: ''
+  columns:
+  - name: country_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: id
+    description: ''
+  - name: image_url
+    description: ''
+  - name: is_active
+    description: ''
+  - name: is_live
+    description: ''
+  - name: name
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: timezone
+    description: ''
+  - name: updated_at
+    description: ''
+- name: closing_balance
+  description: ''
+  columns:
+  - name: date
+    description: ''
+  - name: id
+    description: ''
+  - name: inventory_value
+    description: ''
+  - name: product_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: company
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: id
+    description: ''
+  - name: is_default_distribution
+    description: ''
+  - name: name
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: company_distributors
+  description: ''
+  columns:
+  - name: company_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: distributor_id
+    description: ''
+  - name: id
+    description: ''
+  - name: is_default_distributor
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: company_location
+  description: ''
+  columns:
+  - name: address
+    description: ''
+  - name: company_id
+    description: ''
+  - name: country_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: is_default_hq
+    description: ''
+  - name: name
+    description: ''
+  - name: phone
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: complaint_reasons
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: is_for_rating
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: title
+    description: ''
+  - name: updated_at
+    description: ''
+- name: complaint_sub_reasons
+  description: ''
+  columns:
+  - name: complaint_reason_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: title
+    description: ''
+  - name: updated_at
+    description: ''
+- name: country
+  description: ''
+  columns:
+  - name: code
+    description: ''
+  - name: created_at
+    description: ''
+  - name: customer_support_number
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: enable_consent_for_promotions
+    description: ''
+  - name: flag_url
+    description: ''
+  - name: id
+    description: ''
+  - name: iso_code
+    description: ''
+  - name: is_active
+    description: ''
+  - name: mask
+    description: ''
+  - name: name
+    description: ''
+  - name: rider_support_number
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: country_oneeb_test
+  description: ''
+  columns:
+  - name: code
+    description: ''
+  - name: created_at
+    description: ''
+  - name: customer_support_number
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: enable_consent_for_promotions
+    description: ''
+  - name: flag_url
+    description: ''
+  - name: id
+    description: ''
+  - name: iso_code
+    description: ''
+  - name: is_active
+    description: ''
+  - name: mask
+    description: ''
+  - name: rider_support_number
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: NAME
+    description: ''
+- name: customer
+  description: ''
+  columns:
+  - name: airlift_id
+    description: ''
+  - name: blocked_duration
+    description: ''
+  - name: complaint_ratio
+    description: ''
+  - name: consented_for_promotions
+    description: ''
+  - name: contact
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: dob
+    description: ''
+  - name: email
+    description: ''
+  - name: email_bounced
+    description: ''
+  - name: email_verified
+    description: ''
+  - name: fcm
+    description: ''
+  - name: first_name
+    description: ''
+  - name: gender
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: is_black_listed
+    description: ''
+  - name: is_grey_listed
+    description: ''
+  - name: is_high_valued
+    description: ''
+  - name: is_verified
+    description: ''
+  - name: last_complaint_date
+    description: ''
+  - name: last_name
+    description: ''
+  - name: metadata
+    description: ''
+  - name: opted_for_promotional_email
+    description: ''
+  - name: opted_for_promotional_sms
+    description: ''
+  - name: order_count
+    description: ''
+  - name: platform
+    description: ''
+  - name: pn_engine_level
+    description: ''
+  - name: profile_ignored_order_id
+    description: ''
+  - name: profile_remainder_status
+    description: ''
+  - name: referral_code
+    description: ''
+  - name: referral_completed
+    description: ''
+  - name: referred_by_id
+    description: ''
+  - name: show_referral_email_verify
+    description: ''
+  - name: social_reward_status
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: woocommerce_id
+    description: ''
+- name: customer_referrals
+  description: ''
+  columns:
+  - name: alcs_earned
+    description: ''
+  - name: created_at
+    description: ''
+  - name: customer_id
+    description: ''
+  - name: first_order_completed
+    description: ''
+  - name: id
+    description: ''
+  - name: metadata
+    description: ''
+  - name: referee_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: type
+    description: ''
+  - name: updated_at
+    description: ''
+- name: customer_signups
+  description: ''
+  columns:
+  - name: date
+    description: ''
+  - name: day_of_week_iso
+    description: ''
+  - name: month
+    description: ''
+  - name: signups
+    description: ''
+  - name: week
+    description: ''
+  - name: year
+    description: ''
+- name: customer_type
+  description: ''
+  columns:
+  - name: customers
+    description: ''
+  - name: date
+    description: ''
+  - name: day_of_week_iso
+    description: ''
+  - name: month
+    description: ''
+  - name: ord_type
+    description: ''
+  - name: week
+    description: ''
+  - name: year
+    description: ''
+  - name: _uniqueid_
+    description: ''
+- name: daily_disposals_internal_ew
+  description: ''
+  columns:
+  - name: daily_disposals
+    description: ''
+  - name: product_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: daily_warehouse_metrics
+  description: ''
+  columns:
+  - name: accuracy
+    description: ''
+  - name: aver_time_item
+    description: ''
+  - name: avg_proc_time
+    description: ''
+  - name: damaged
+    description: ''
+  - name: dt
+    description: ''
+  - name: expired
+    description: ''
+  - name: line_item_accuracy_per_1000_lines
+    description: ''
+  - name: missed
+    description: ''
+  - name: orders_delivered
+    description: ''
+  - name: orders_picked_u5mins
+    description: ''
+  - name: orders_pq_u2mins
+    description: ''
+  - name: ord_per_manhr
+    description: ''
+  - name: ord_per_personv2
+    description: ''
+  - name: pct_orders_avgskus_picked_under_20
+    description: ''
+  - name: pct_ordp_u10
+    description: ''
+  - name: pct_ordp_u7
+    description: ''
+  - name: pct_rpick_2
+    description: ''
+  - name: pct_rpick_3
+    description: ''
+  - name: productive_time
+    description: ''
+  - name: pRODUCT qUALITY cOMPLAINT rATE
+    description: ''
+  - name: stale
+    description: ''
+  - name: warehouse
+    description: ''
+  - name: _unique_id
+    description: ''
+- name: distributor
+  description: ''
+  columns:
+  - name: address
+    description: ''
+  - name: bank_name
+    description: ''
+  - name: can_accept_returns
+    description: ''
+  - name: created_at
+    description: ''
+  - name: credit_lines_in_days
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: email
+    description: ''
+  - name: iban
+    description: ''
+  - name: id
+    description: ''
+  - name: internal_warehouse_id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: is_internal
+    description: ''
+  - name: is_mrp_exempted
+    description: ''
+  - name: is_price_locked
+    description: ''
+  - name: name
+    description: ''
+  - name: ntn
+    description: ''
+  - name: old_id
+    description: ''
+  - name: payment_method
+    description: ''
+  - name: phone
+    description: ''
+  - name: sales_tax_registered
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: strn
+    description: ''
+  - name: type
+    description: ''
+  - name: updated_at
+    description: ''
+- name: distributor_accessible_warehouses
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: delivery_days
+    description: ''
+  - name: delivery_weeks
+    description: ''
+  - name: distributor_id
+    description: ''
+  - name: distributor_id_old
+    description: ''
+  - name: id
+    description: ''
+  - name: point_of_contact_email
+    description: ''
+  - name: point_of_contact_name
+    description: ''
+  - name: point_of_contact_phone
+    description: ''
+  - name: point_of_contact_position
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: supplier_direct_access
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: distributor_category
+  description: ''
+  columns:
+  - name: distributor_category
+    description: ''
+  - name: distributor_id
+    description: ''
+  - name: distributor_name
+    description: ''
+- name: distributor_metrics
+  description: ''
+  columns:
+  - name: arrival_rate
+    description: ''
+  - name: distributor_id
+    description: ''
+  - name: fulfillment_rate_given_arrival
+    description: ''
+  - name: lead_time_avg
+    description: ''
+  - name: lead_time_stddev
+    description: ''
+  - name: product_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: distributor_product
+  description: ''
+  columns:
+  - name: bulk_package_size
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: delivery_method
+    description: ''
+  - name: distributor_id
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: is_mrp_exempted
+    description: ''
+  - name: is_price_locked
+    description: ''
+  - name: lead_time
+    description: ''
+  - name: mrp
+    description: ''
+  - name: price_visible_on_packaging
+    description: ''
+  - name: product_id
+    description: ''
+  - name: rank
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: supplier_sku
+    description: ''
+  - name: tax
+    description: ''
+  - name: unit_price
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: weightage
+    description: ''
+- name: electronics_identifier
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: disposal_reason
+    description: ''
+  - name: id
+    description: ''
+  - name: order_id
+    description: ''
+  - name: po_item_id
+    description: ''
+  - name: product_id
+    description: ''
+  - name: qa_order_id
+    description: ''
+  - name: serial_number
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: unique_identifier
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: equipment
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: delivered_by
+    description: ''
+  - name: equipment_type_id
+    description: ''
+  - name: id
+    description: ''
+  - name: installment_id
+    description: ''
+  - name: price
+    description: ''
+  - name: quantity
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: supplier_invoice
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: equipment_installment_log
+  description: ''
+  columns:
+  - name: amount
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: equipment_log_id
+    description: ''
+  - name: id
+    description: ''
+  - name: installment
+    description: ''
+  - name: next_installment_date
+    description: ''
+  - name: remaining_amount
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: type
+    description: ''
+  - name: updated_at
+    description: ''
+- name: equipment_log
+  description: ''
+  columns:
+  - name: assigned_by_id
+    description: ''
+  - name: assigned_id
+    description: ''
+  - name: assigned_to_id
+    description: ''
+  - name: assignment_date
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: equipment_id
+    description: ''
+  - name: id
+    description: ''
+  - name: payment_method
+    description: ''
+  - name: payment_status
+    description: ''
+  - name: return_date
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: updated_at
+    description: ''
+- name: equipment_type
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: image_url
+    description: ''
+  - name: is_blocking
+    description: ''
+  - name: name
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: ew_demand
+  description: ''
+  columns:
+  - name: distributor
+    description: ''
+  - name: pRODUCTiD
+    description: ''
+  - name: qUANTITY
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: DISTRIBUTORiD
+    description: ''
+- name: express_ms_link
+  description: ''
+  columns:
+  - name: mothership_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: express_ms_product_link
+  description: ''
+  columns:
+  - name: mothership_id
+    description: ''
+  - name: product_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: first_check_in
+  description: ''
+  columns:
+  - name: first_check_in
+    description: ''
+  - name: product_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: fulfillment_purchase_orders
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: fulfillment_request_id
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: no_of_box_loaded_count
+    description: ''
+  - name: no_of_box_off_loaded_count
+    description: ''
+  - name: purchase_order_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: transporter_id
+    description: ''
+  - name: truck_number
+    description: ''
+  - name: updated_at
+    description: ''
+- name: fulfillment_request
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: loader_id
+    description: ''
+  - name: master_warehouse_id
+    description: ''
+  - name: no_of_box_loaded_count
+    description: ''
+  - name: no_of_box_off_loaded_count
+    description: ''
+  - name: purchase_order_id
+    description: ''
+  - name: retriever_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: transporter_id
+    description: ''
+  - name: truck_number
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: version
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: fulfillment_request_item
+  description: ''
+  columns:
+  - name: actual_quantity
+    description: ''
+  - name: checkout_quantity
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: extra_quantity
+    description: ''
+  - name: fulfillment_request_id
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: loaded_quatity
+    description: ''
+  - name: loader_id
+    description: ''
+  - name: loading_completed_at
+    description: ''
+  - name: loading_started_at
+    description: ''
+  - name: move_to_loader_quantity
+    description: ''
+  - name: notloadedquantitystatus
+    description: ''
+  - name: not_loaded_quantity
+    description: ''
+  - name: product_id
+    description: ''
+  - name: purchase_order_items_id
+    description: ''
+  - name: quantity
+    description: ''
+  - name: retriever_assigned_on
+    description: ''
+  - name: retriever_id
+    description: ''
+  - name: retrieving_completed_at
+    description: ''
+  - name: score
+    description: ''
+  - name: secondary_status
+    description: ''
+  - name: skip_reason
+    description: ''
+  - name: sorter_skip_quantity
+    description: ''
+  - name: sorter_skip_reason
+    description: ''
+  - name: sort_quantity
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: transport_quantity
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: fulfillment_request_item_cart
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: fulfillment_request_item_id
+    description: ''
+  - name: id
+    description: ''
+  - name: quantity
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: updated_at
+    description: ''
+- name: fulfillment_request_trolley
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: fulfillment_request_id
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: trolley_id
+    description: ''
+  - name: updated_at
+    description: ''
+- name: growth_adj
+  description: ''
+  columns:
+  - name: growth_factor
+    description: ''
+  - name: product_id
+    description: ''
+  - name: s1
+    description: ''
+  - name: s7
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: hist_sales
+  description: ''
+  columns:
+  - name: date_rank
+    description: ''
+  - name: dt
+    description: ''
+  - name: product_id
+    description: ''
+  - name: sales
+    description: ''
+  - name: total_orders
+    description: ''
+  - name: unique_orders
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: hist_sales_oos
+  description: ''
+  columns:
+  - name: pct_orders
+    description: ''
+  - name: product_id
+    description: ''
+  - name: sales
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: imputed_cost_prices_v_1
+  description: ''
+  columns:
+  - name: calendar_week
+    description: ''
+  - name: imputed_cost
+    description: ''
+  - name: product_id
+    description: ''
+  - name: product_name
+    description: ''
+  - name: supply_type
+    description: ''
+  - name: warehouse_city
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: warehouse_name
+    description: ''
+- name: inactive_daily_logs
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: inactive
+    description: ''
+  - name: is_dead
+    description: ''
+  - name: product_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: _unique_id
+    description: ''
+- name: installment
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: down_payment
+    description: ''
+  - name: equipment_type_id
+    description: ''
+  - name: grace_period
+    description: ''
+  - name: id
+    description: ''
+  - name: interval_days
+    description: ''
+  - name: name
+    description: ''
+  - name: number_of_intervals
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: total_payment
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_id
+    description: ''
+- name: inventory
+  description: ''
+  columns:
+  - name: campaign_boosted_rewards
+    description: ''
+  - name: campaign_discounted_price
+    description: ''
+  - name: campaign_metadata
+    description: ''
+  - name: campaign_price_expiry
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: desired_inventory_level
+    description: ''
+  - name: discount_type
+    description: ''
+  - name: discount_value
+    description: ''
+  - name: final_price
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: list_price
+    description: ''
+  - name: min_inventory_level
+    description: ''
+  - name: mrp
+    description: ''
+  - name: price_visible_on_packaging
+    description: ''
+  - name: product_id
+    description: ''
+  - name: raw_units
+    description: ''
+  - name: raw_unit_price
+    description: ''
+  - name: rewards_point
+    description: ''
+  - name: sales_tax_pct
+    description: ''
+  - name: soft_buffer_level
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: unitcostrejectreason
+    description: ''
+  - name: units
+    description: ''
+  - name: unit_bulk_size
+    description: ''
+  - name: unit_price
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: inventory_audit
+  description: ''
+  columns:
+  - name: audited_by
+    description: ''
+  - name: barcode_reason
+    description: ''
+  - name: created_at
+    description: ''
+  - name: current_units
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: id
+    description: ''
+  - name: origin
+    description: ''
+  - name: product_id
+    description: ''
+  - name: qa_order_id
+    description: ''
+  - name: qa_units
+    description: ''
+  - name: skipped_units
+    description: ''
+  - name: source_worker_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: type
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: inventory_audit_change
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: id
+    description: ''
+  - name: inventory_audit_id
+    description: ''
+  - name: inventory_change_id
+    description: ''
+  - name: missing_reason
+    description: ''
+  - name: product_id
+    description: ''
+  - name: qa_order_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: type
+    description: ''
+  - name: units
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: inventory_change
+  description: ''
+  columns:
+  - name: context_id
+    description: ''
+  - name: context_type
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: disposal_reason
+    description: ''
+  - name: distributor_id
+    description: ''
+  - name: expiry_date
+    description: ''
+  - name: id
+    description: ''
+  - name: inventory_value
+    description: ''
+  - name: missing_inventory_checkin_reason
+    description: ''
+  - name: order_id
+    description: ''
+  - name: other_disposal_reasons
+    description: ''
+  - name: product_id
+    description: ''
+  - name: purchase_order_id
+    description: ''
+  - name: raw_units
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: supplier_id_deprecated
+    description: ''
+  - name: type
+    description: ''
+  - name: units
+    description: ''
+  - name: unit_price
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: last_checkin_price
+  description: ''
+  columns:
+  - name: cost_price
+    description: ''
+  - name: distributor_id
+    description: ''
+  - name: product_id
+    description: ''
+- name: last_fifteen_sales
+  description: ''
+  columns:
+  - name: category
+    description: ''
+  - name: daily_sales
+    description: ''
+  - name: days
+    description: ''
+  - name: name
+    description: ''
+  - name: product_id
+    description: ''
+  - name: quantity_sold
+    description: ''
+  - name: revenue
+    description: ''
+  - name: sku
+    description: ''
+  - name: subcategory
+    description: ''
+  - name: total_orders
+    description: ''
+  - name: total_revenue
+    description: ''
+  - name: unique_orders
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: GROUP
+    description: ''
+- name: last_seven_sales
+  description: ''
+  columns:
+  - name: category
+    description: ''
+  - name: daily_sales
+    description: ''
+  - name: days
+    description: ''
+  - name: name
+    description: ''
+  - name: product_id
+    description: ''
+  - name: quantity_sold
+    description: ''
+  - name: revenue
+    description: ''
+  - name: sku
+    description: ''
+  - name: subcategory
+    description: ''
+  - name: total_orders
+    description: ''
+  - name: total_revenue
+    description: ''
+  - name: unique_orders
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: GROUP
+    description: ''
+- name: mothership_sales
+  description: ''
+  columns:
+  - name: arrival_rate
+    description: ''
+  - name: avg_selling_price
+    description: ''
+  - name: barcode
+    description: ''
+  - name: bulk_package_size
+    description: ''
+  - name: category
+    description: ''
+  - name: class
+    description: ''
+  - name: daily_sales
+    description: ''
+  - name: daily_sales_act
+    description: ''
+  - name: db_desired_inventory_level
+    description: ''
+  - name: db_min_inventory_level
+    description: ''
+  - name: db_soft_buffer_level
+    description: ''
+  - name: desired_days_inventory
+    description: ''
+  - name: distributor
+    description: ''
+  - name: distributor_cost_price
+    description: ''
+  - name: distributor_id
+    description: ''
+  - name: first_check_in
+    description: ''
+  - name: fulfillment_rate_given_arrival
+    description: ''
+  - name: is_centralized
+    description: ''
+  - name: is_dead_sku
+    description: ''
+  - name: lead_time_avg
+    description: ''
+  - name: lead_time_stddev
+    description: ''
+  - name: min_days_inventory
+    description: ''
+  - name: min_ew_inventory
+    description: ''
+  - name: min_ew_inventory_days
+    description: ''
+  - name: mothership_id
+    description: ''
+  - name: mothership_inventory
+    description: ''
+  - name: product_id
+    description: ''
+  - name: product_name
+    description: ''
+  - name: sku
+    description: ''
+  - name: sku_type
+    description: ''
+  - name: soft_buffer_days
+    description: ''
+  - name: status
+    description: ''
+  - name: subcategory
+    description: ''
+  - name: GROUP
+    description: ''
+- name: orders
+  description: ''
+  columns:
+  - name: address
+    description: ''
+  - name: alc_posted_in_replacement_order
+    description: ''
+  - name: amount
+    description: ''
+  - name: bagscount
+    description: ''
+  - name: barcode
+    description: ''
+  - name: campaign_id
+    description: ''
+  - name: cancelled_by
+    description: ''
+  - name: cancel_request
+    description: ''
+  - name: cart_client_id
+    description: ''
+  - name: cashierid
+    description: ''
+  - name: cashier_id
+    description: ''
+  - name: cash_status
+    description: ''
+  - name: collected_cash_amount
+    description: ''
+  - name: collected_cash_description
+    description: ''
+  - name: collected_cash_difference_reason
+    description: ''
+  - name: created_at
+    description: ''
+  - name: created_by_id
+    description: ''
+  - name: credits_refunded
+    description: ''
+  - name: credits_used
+    description: ''
+  - name: currency_id
+    description: ''
+  - name: customer_id
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: delivery_charges
+    description: ''
+  - name: delivery_status
+    description: ''
+  - name: distance
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: is_heavy
+    description: ''
+  - name: late_notification_sent
+    description: ''
+  - name: metadata
+    description: ''
+  - name: note
+    description: ''
+  - name: number
+    description: ''
+  - name: order_change_snapshot
+    description: ''
+  - name: packer_assigned_on
+    description: ''
+  - name: packer_id
+    description: ''
+  - name: paid_amount
+    description: ''
+  - name: payment_id
+    description: ''
+  - name: payment_method
+    description: ''
+  - name: picker_assigned_on
+    description: ''
+  - name: picker_id
+    description: ''
+  - name: picker_note
+    description: ''
+  - name: pin
+    description: ''
+  - name: platform
+    description: ''
+  - name: prescription_images
+    description: ''
+  - name: recommended_rider_count
+    description: ''
+  - name: rider_assigned_on
+    description: ''
+  - name: rider_id
+    description: ''
+  - name: scheduled
+    description: ''
+  - name: scheduled_time
+    description: ''
+  - name: sort_order
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: tags
+    description: ''
+  - name: total_volume
+    description: ''
+  - name: total_weight
+    description: ''
+  - name: tracking_id
+    description: ''
+  - name: trolley_id
+    description: ''
+  - name: type
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: verifier_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: woocommerce_id
+    description: ''
+- name: orders_summary
+  description: ''
+  columns:
+  - name: city
+    description: ''
+  - name: city_id
+    description: ''
+  - name: date
+    description: ''
+  - name: day_of_week_iso
+    description: ''
+  - name: month
+    description: ''
+  - name: orders
+    description: ''
+  - name: week
+    description: ''
+  - name: year
+    description: ''
+  - name: _unique_key_
+    description: ''
+- name: order_change
+  description: ''
+  columns:
+  - name: actor_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: order_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: suborder_id
+    description: ''
+  - name: type
+    description: ''
+  - name: updated_at
+    description: ''
+- name: order_complaint
+  description: ''
+  columns:
+  - name: complaint_reason_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: created_by_user_id
+    description: ''
+  - name: customer_id
+    description: ''
+  - name: description
+    description: ''
+  - name: id
+    description: ''
+  - name: resolved_action
+    description: ''
+  - name: source
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: updated_by_user_id
+    description: ''
+- name: order_complaint_details
+  description: ''
+  columns:
+  - name: complaint_sub_reason_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: order_complaint_id
+    description: ''
+  - name: order_id
+    description: ''
+  - name: product_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: order_coupons
+  description: ''
+  columns:
+  - name: code
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: device_identifier
+    description: ''
+  - name: discount_inc_tax
+    description: ''
+  - name: id
+    description: ''
+  - name: order_id
+    description: ''
+  - name: promo_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: order_details
+  description: ''
+  columns:
+  - name: accuracy
+    description: ''
+  - name: address
+    description: ''
+  - name: arrival_time
+    description: ''
+  - name: cancelled_by
+    description: ''
+  - name: cashier_id
+    description: ''
+  - name: cash_collection_time
+    description: ''
+  - name: cash_collection_timestamp
+    description: ''
+  - name: city
+    description: ''
+  - name: city_id
+    description: ''
+  - name: commute_time
+    description: ''
+  - name: contact
+    description: ''
+  - name: country
+    description: ''
+  - name: country_id
+    description: ''
+  - name: credits_used
+    description: ''
+  - name: customerordertime
+    description: ''
+  - name: customer_id
+    description: ''
+  - name: deliverytime
+    description: ''
+  - name: delivery_time
+    description: ''
+  - name: discount_value_usd
+    description: ''
+  - name: dispatchtime
+    description: ''
+  - name: dispatch_time
+    description: ''
+  - name: email
+    description: ''
+  - name: gross_revenue
+    description: ''
+  - name: id
+    description: ''
+  - name: loc_lat
+    description: ''
+  - name: loc_long
+    description: ''
+  - name: name
+    description: ''
+  - name: note
+    description: ''
+  - name: ordernumber
+    description: ''
+  - name: order_amount
+    description: ''
+  - name: order_revenue
+    description: ''
+  - name: ord_type
+    description: ''
+  - name: orignalitems
+    description: ''
+  - name: packed_timestamp
+    description: ''
+  - name: packer_name
+    description: ''
+  - name: packing_bcodes_scans
+    description: ''
+  - name: packing_queue_time
+    description: ''
+  - name: packing_time
+    description: ''
+  - name: packing_timestamp
+    description: ''
+  - name: paid_amount
+    description: ''
+  - name: payment_method
+    description: ''
+  - name: picked_timestamp
+    description: ''
+  - name: picker_id
+    description: ''
+  - name: picker_name
+    description: ''
+  - name: picking_bcodes_scans
+    description: ''
+  - name: picking_queue_time
+    description: ''
+  - name: picking_time
+    description: ''
+  - name: picking_timestamp
+    description: ''
+  - name: platform
+    description: ''
+  - name: promo_code
+    description: ''
+  - name: promo_details
+    description: ''
+  - name: promo_discount
+    description: ''
+  - name: promo_id
+    description: ''
+  - name: rating
+    description: ''
+  - name: received_timestamp
+    description: ''
+  - name: region
+    description: ''
+  - name: region_id
+    description: ''
+  - name: revenue_usd
+    description: ''
+  - name: review
+    description: ''
+  - name: rider_id
+    description: ''
+  - name: rider_name
+    description: ''
+  - name: ride_id
+    description: ''
+  - name: scheduled_time
+    description: ''
+  - name: sold_items
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: totalitems
+    description: ''
+  - name: totaluniqueitems
+    description: ''
+  - name: unique_items_sold
+    description: ''
+  - name: verification_timestamp
+    description: ''
+  - name: warehouse
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: order_locations
+  description: ''
+  columns:
+  - name: id
+    description: ''
+  - name: loc_lat
+    description: ''
+  - name: loc_long
+    description: ''
+  - name: o_num
+    description: ''
+- name: order_product
+  description: ''
+  columns:
+  - name: action_taken
+    description: ''
+  - name: actual_price
+    description: ''
+  - name: actual_quantity
+    description: ''
+  - name: alc_posted
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: meta_data
+    description: ''
+  - name: order_id
+    description: ''
+  - name: packer_incorrect_barcode
+    description: ''
+  - name: picker_incorrect_barcode
+    description: ''
+  - name: prescriptionverified
+    description: ''
+  - name: price
+    description: ''
+  - name: product_id
+    description: ''
+  - name: quantity
+    description: ''
+  - name: reason
+    description: ''
+  - name: returneditems
+    description: ''
+  - name: returned_quantity
+    description: ''
+  - name: rewards_point
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: suborder_id
+    description: ''
+  - name: tax
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: woocommerce_id
+    description: ''
+- name: order_rating
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: order_id
+    description: ''
+  - name: rating_woocommerce_id
+    description: ''
+  - name: review
+    description: ''
+  - name: review_woocommerce_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: value
+    description: ''
+- name: order_type
+  description: ''
+  columns:
+  - name: city_id
+    description: ''
+  - name: country_id
+    description: ''
+  - name: discount_value
+    description: ''
+  - name: discount_value_usd
+    description: ''
+  - name: dt
+    description: ''
+  - name: first_order_dt
+    description: ''
+  - name: id
+    description: ''
+  - name: ord_type
+    description: ''
+  - name: o_num
+    description: ''
+  - name: revenue
+    description: ''
+  - name: revenue_usd
+    description: ''
+  - name: user_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: package_product
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: id
+    description: ''
+  - name: package_request_id
+    description: ''
+  - name: product_id
+    description: ''
+  - name: quantity
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: package_request
+  description: ''
+  columns:
+  - name: action_taken_at
+    description: ''
+  - name: approver_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: id
+    description: ''
+  - name: rejection_reason
+    description: ''
+  - name: requested_at
+    description: ''
+  - name: requested_by
+    description: ''
+  - name: request_status
+    description: ''
+  - name: shift_detail_id
+    description: ''
+  - name: shift_worker_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: worker_id
+    description: ''
+- name: parking_attendance
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: date_time
+    description: ''
+  - name: device_id
+    description: ''
+  - name: employee_code
+    description: ''
+  - name: id
+    description: ''
+  - name: posted
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: transaction_id
+    description: ''
+  - name: updated_at
+    description: ''
+- name: picking_cart_placement_logs
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: placement_cart_id
+    description: ''
+  - name: placer_id
+    description: ''
+  - name: rack_label
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: units_placed
+    description: ''
+  - name: updated_at
+    description: ''
+- name: placement
+  description: ''
+  columns:
+  - name: carton_placement_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: expiry_date
+    description: ''
+  - name: id
+    description: ''
+  - name: placer_id
+    description: ''
+  - name: product_id
+    description: ''
+  - name: rack_not_scanning_reason
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: units_placed
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: placement_cart
+  description: ''
+  columns:
+  - name: carton_placement_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: damaged_item_count
+    description: ''
+  - name: expired_item_count
+    description: ''
+  - name: id
+    description: ''
+  - name: in_cart_barcode_status
+    description: ''
+  - name: in_placement_barcode_status
+    description: ''
+  - name: item_not_found_count
+    description: ''
+  - name: missing_placement_req_id
+    description: ''
+  - name: placement_order_id
+    description: ''
+  - name: placer_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: trolley_lot_id
+    description: ''
+  - name: units_picked
+    description: ''
+  - name: units_placed
+    description: ''
+  - name: updated_at
+    description: ''
+- name: placement_order
+  description: ''
+  columns:
+  - name: assigned_on
+    description: ''
+  - name: assigned_to
+    description: ''
+  - name: cancelled_by
+    description: ''
+  - name: cart_loading_time
+    description: ''
+  - name: created_at
+    description: ''
+  - name: end_time
+    description: ''
+  - name: id
+    description: ''
+  - name: incentive_snapshot
+    description: ''
+  - name: is_open_placement
+    description: ''
+  - name: return_order_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_time
+    description: ''
+  - name: status
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: po_approval
+  description: ''
+  columns:
+  - name: actor_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: creation_reason
+    description: ''
+  - name: flagging_reasons
+    description: ''
+  - name: id
+    description: ''
+  - name: purchase_order_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: updated_at
+    description: ''
+- name: po_delivery_session
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: delivery_person_contact
+    description: ''
+  - name: delivery_person_name
+    description: ''
+  - name: distributor_id
+    description: ''
+  - name: id
+    description: ''
+  - name: invoice_no
+    description: ''
+  - name: is_active
+    description: ''
+  - name: purchase_order_grn_id
+    description: ''
+  - name: purchase_order_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: po_delivery_session_change_log
+  description: ''
+  columns:
+  - name: activity_type
+    description: ''
+  - name: actor_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: meta_data
+    description: ''
+  - name: platform
+    description: ''
+  - name: po_delivery_session_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: price_change_log
+  description: ''
+  columns:
+  - name: activity_id
+    description: ''
+  - name: change_time_in_utc
+    description: ''
+  - name: discount_type
+    description: ''
+  - name: discount_value
+    description: ''
+  - name: final_price
+    description: ''
+  - name: list_price
+    description: ''
+  - name: prev_discount_type
+    description: ''
+  - name: prev_discount_value
+    description: ''
+  - name: prev_final_price
+    description: ''
+  - name: prev_list_price
+    description: ''
+  - name: product_id
+    description: ''
+  - name: unique_column
+    description: ''
+  - name: user_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: USER_NAME
+    description: ''
+- name: pricing_fresh_coefficient
+  description: ''
+  columns:
+  - name: coefficient
+    description: ''
+  - name: product_id_processed
+    description: ''
+  - name: product_id_raw
+    description: ''
+- name: process_owner
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: id
+    description: ''
+  - name: members
+    description: ''
+  - name: owner_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: product
+  description: ''
+  columns:
+  - name: age_verification
+    description: ''
+  - name: barcode
+    description: ''
+  - name: barcodes
+    description: ''
+  - name: best_before_sales_buffer
+    description: ''
+  - name: brand_id
+    description: ''
+  - name: conversion_factor
+    description: ''
+  - name: country_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deep_link
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: description
+    description: ''
+  - name: expiring_soon_buffer
+    description: ''
+  - name: height
+    description: ''
+  - name: high_perishable
+    description: ''
+  - name: id
+    description: ''
+  - name: images_url
+    description: ''
+  - name: image_url
+    description: ''
+  - name: is_active
+    description: ''
+  - name: is_distributor_product
+    description: ''
+  - name: is_expirable
+    description: ''
+  - name: is_imported
+    description: ''
+  - name: is_qc_required
+    description: ''
+  - name: length
+    description: ''
+  - name: master_product_id
+    description: ''
+  - name: maximum_per_order_quantity
+    description: ''
+  - name: metric
+    description: ''
+  - name: minimum_shelf_life_buffer
+    description: ''
+  - name: mrp
+    description: ''
+  - name: name
+    description: ''
+  - name: not_applicable_for_discount
+    description: ''
+  - name: ordering_metric
+    description: ''
+  - name: packer_instruciton
+    description: ''
+  - name: picker_instruction
+    description: ''
+  - name: placer_instruction
+    description: ''
+  - name: prescription_required
+    description: ''
+  - name: price_visible_on_packaging
+    description: ''
+  - name: product_group_id
+    description: ''
+  - name: product_key
+    description: ''
+  - name: rack
+    description: ''
+  - name: remarks
+    description: ''
+  - name: sku
+    description: ''
+  - name: sku_incentive_type
+    description: ''
+  - name: sku_type
+    description: ''
+  - name: slug
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: tags
+    description: ''
+  - name: units
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: variation
+    description: ''
+  - name: weight
+    description: ''
+  - name: width
+    description: ''
+  - name: woocommerce_id
+    description: ''
+- name: products_delivered
+  description: ''
+  columns:
+  - name: category
+    description: ''
+  - name: dt
+    description: ''
+  - name: name
+    description: ''
+  - name: product_id
+    description: ''
+  - name: quantity_sold
+    description: ''
+  - name: revenue
+    description: ''
+  - name: selling_price
+    description: ''
+  - name: sku
+    description: ''
+  - name: subcategory
+    description: ''
+  - name: unique_orders
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: GROUP
+    description: ''
+- name: product_categories
+  description: ''
+  columns:
+  - name: category_id
+    description: ''
+  - name: product_id
+    description: ''
+  - name: product_sort
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: product_detail
+  description: ''
+  columns:
+  - name: barcodes
+    description: ''
+  - name: bundle_unit_bulk_size
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: image_url
+    description: ''
+  - name: product_group_id
+    description: ''
+  - name: product_group_name
+    description: ''
+  - name: product_id
+    description: ''
+  - name: product_name
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: unit_bulk_size
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: product_group
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: default_product_id
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: description
+    description: ''
+  - name: id
+    description: ''
+  - name: name
+    description: ''
+  - name: slug
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: woocommerce_product_id
+    description: ''
+- name: product_one_category
+  description: ''
+  columns:
+  - name: category
+    description: ''
+  - name: product_id
+    description: ''
+  - name: subcategory
+    description: ''
+  - name: GROUP
+    description: ''
+- name: product_pricing
+  description: ''
+  columns:
+  - name: base_reward_points
+    description: ''
+  - name: campaign_metadata
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: discount_type
+    description: ''
+  - name: discount_value
+    description: ''
+  - name: final_price
+    description: ''
+  - name: final_reward_points
+    description: ''
+  - name: id
+    description: ''
+  - name: list_price
+    description: ''
+  - name: product_id
+    description: ''
+  - name: reward_booster_type
+    description: ''
+  - name: reward_booster_value
+    description: ''
+  - name: sales_tax_percent
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: product_replenishment_subscription
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: customer_id
+    description: ''
+  - name: id
+    description: ''
+  - name: notification_sent
+    description: ''
+  - name: ordered
+    description: ''
+  - name: product_id
+    description: ''
+  - name: replenishment_time
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: units
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: product_searches
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: customer_woocommerce_id
+    description: ''
+  - name: id
+    description: ''
+  - name: records_returned
+    description: ''
+  - name: search_text
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: product_warehouse
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: incorrect_rack_lable
+    description: ''
+  - name: in_active
+    description: ''
+  - name: in_active_reason
+    description: ''
+  - name: is_centralized
+    description: ''
+  - name: is_dead_sku
+    description: ''
+  - name: is_golden
+    description: ''
+  - name: maximum_per_day_quantity
+    description: ''
+  - name: packer_instruction
+    description: ''
+  - name: picker_instruction
+    description: ''
+  - name: placer_instruction
+    description: ''
+  - name: product_id
+    description: ''
+  - name: rack
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: product_warehouse_dates
+  description: ''
+  columns:
+  - name: dte
+    description: ''
+  - name: product_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: _unique_id
+    description: ''
+- name: product_warehouse_dates_old
+  description: ''
+  columns:
+  - name: dte
+    description: ''
+  - name: product_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: _unique_id
+    description: ''
+- name: prod_price_log
+  description: ''
+  columns:
+  - name: average_price
+    description: ''
+  - name: product_date
+    description: ''
+  - name: product_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: prod_price_log_v_2
+  description: ''
+  columns:
+  - name: average_price
+    description: ''
+  - name: product_date
+    description: ''
+  - name: product_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: _unique_id
+    description: ''
+- name: promo
+  description: ''
+  columns:
+  - name: amount
+    description: ''
+  - name: code
+    description: ''
+  - name: country_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: created_by
+    description: ''
+  - name: daily_limit_per_device
+    description: ''
+  - name: daily_limit_per_user
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: details
+    description: ''
+  - name: discount_on_delivery
+    description: ''
+  - name: discount_type
+    description: ''
+  - name: end_time
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: is_for_new_customers_only
+    description: ''
+  - name: max_discount
+    description: ''
+  - name: min_spend_amount
+    description: ''
+  - name: monthly_limit_per_user
+    description: ''
+  - name: overall_campaign_usage
+    description: ''
+  - name: overall_campaign_value
+    description: ''
+  - name: promo_level
+    description: ''
+  - name: promo_type
+    description: ''
+  - name: rules
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_time
+    description: ''
+  - name: times_promo_consumed
+    description: ''
+  - name: total_usage_limit
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: usage_limit_per_device
+    description: ''
+  - name: usage_limit_per_user
+    description: ''
+- name: promo_customers
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: customer_id
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: promo_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: _sdc_deleted_at
+    description: ''
+- name: purchase_order
+  description: ''
+  columns:
+  - name: check_in_user_id
+    description: ''
+  - name: comment
+    description: ''
+  - name: created_at
+    description: ''
+  - name: created_by
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: delivery_date
+    description: ''
+  - name: delivery_person_contact
+    description: ''
+  - name: delivery_person_name
+    description: ''
+  - name: distributor_id
+    description: ''
+  - name: distributor_id_old
+    description: ''
+  - name: id
+    description: ''
+  - name: invoice_amount
+    description: ''
+  - name: is_active
+    description: ''
+  - name: is_open
+    description: ''
+  - name: is_quality_check_complete
+    description: ''
+  - name: paid_price
+    description: ''
+  - name: payment_due_date
+    description: ''
+  - name: payment_problem_details
+    description: ''
+  - name: payment_scheduled_date
+    description: ''
+  - name: payment_status
+    description: ''
+  - name: po_batch_id
+    description: ''
+  - name: proof_of_payment
+    description: ''
+  - name: receipts
+    description: ''
+  - name: source
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: supplier_invoice_no
+    description: ''
+  - name: total_price
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: __sdc_primary_key
+    description: ''
+- name: purchase_order_action
+  description: ''
+  columns:
+  - name: action
+    description: ''
+  - name: actor_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: description
+    description: ''
+  - name: id
+    description: ''
+  - name: meta_data
+    description: ''
+  - name: purchase_order_id
+    description: ''
+  - name: reason
+    description: ''
+  - name: source
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: updated_at
+    description: ''
+- name: purchase_order_batch
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: created_by_id
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: purchase_order_grn
+  description: ''
+  columns:
+  - name: adjusted_amount
+    description: ''
+  - name: adjustments
+    description: ''
+  - name: advance_income_tax
+    description: ''
+  - name: amount
+    description: ''
+  - name: check_in_user_id
+    description: ''
+  - name: count_reprocess_grn
+    description: ''
+  - name: count_reupload_invoice
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: delivery_charges
+    description: ''
+  - name: delivery_charges_comments
+    description: ''
+  - name: discount
+    description: ''
+  - name: distributor_name
+    description: ''
+  - name: id
+    description: ''
+  - name: invoice_amount
+    description: ''
+  - name: invoice_no
+    description: ''
+  - name: items
+    description: ''
+  - name: marked_problematic_at
+    description: ''
+  - name: marked_problematic_by_id
+    description: ''
+  - name: marked_problematic_comments
+    description: ''
+  - name: name
+    description: ''
+  - name: paid_at
+    description: ''
+  - name: paid_by_id
+    description: ''
+  - name: paid_via_advance
+    description: ''
+  - name: payableamountchangereason
+    description: ''
+  - name: payable_amount
+    description: ''
+  - name: payment_due_date
+    description: ''
+  - name: payment_status
+    description: ''
+  - name: platform
+    description: ''
+  - name: promotion
+    description: ''
+  - name: proof_of_payment
+    description: ''
+  - name: purchase_order_id
+    description: ''
+  - name: receipts
+    description: ''
+  - name: sales_tax
+    description: ''
+  - name: selected_amount
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: supplier_name
+    description: ''
+  - name: total
+    description: ''
+  - name: type
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_name
+    description: ''
+  - name: with_holding_tax
+    description: ''
+  - name: __sdc_primary_key
+    description: ''
+- name: purchase_order_grn_invoices
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: id
+    description: ''
+  - name: invoice_amount
+    description: ''
+  - name: invoice_no
+    description: ''
+  - name: purchase_order_grn_id
+    description: ''
+  - name: purchase_order_id
+    description: ''
+  - name: receipts
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: type
+    description: ''
+  - name: updated_at
+    description: ''
+- name: purchase_order_grn_log
+  description: ''
+  columns:
+  - name: action_type
+    description: ''
+  - name: actor_id
+    description: ''
+  - name: amount
+    description: ''
+  - name: comments
+    description: ''
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: platform
+    description: ''
+  - name: purchase_order_grn_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: purchase_order_item
+  description: ''
+  columns:
+  - name: checked_in_expiry_units
+    description: ''
+  - name: checked_in_quantity
+    description: ''
+  - name: check_in_time
+    description: ''
+  - name: check_in_total_price
+    description: ''
+  - name: check_in_unit_price
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: delivered_quantity
+    description: ''
+  - name: delivery_session
+    description: ''
+  - name: electronics_identifiers
+    description: ''
+  - name: expiry_units
+    description: ''
+  - name: free_of_cost_expiry_units
+    description: ''
+  - name: free_of_cost_quantity
+    description: ''
+  - name: fulfillment_request_item_id
+    description: ''
+  - name: id
+    description: ''
+  - name: is_close
+    description: ''
+  - name: loaded_quantity
+    description: ''
+  - name: po_pending_approval
+    description: ''
+  - name: product_id
+    description: ''
+  - name: purchase_order_id
+    description: ''
+  - name: qc_accepted_quantity
+    description: ''
+  - name: quantity_on_invoice
+    description: ''
+  - name: retrieved_quantity
+    description: ''
+  - name: sorted_quantity
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: total_price
+    description: ''
+  - name: units
+    description: ''
+  - name: unit_price
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_id
+    description: ''
+  - name: verification_status
+    description: ''
+  - name: verified_count
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: purchase_order_item_process
+  description: ''
+  columns:
+  - name: actor_id
+    description: ''
+  - name: barcode
+    description: ''
+  - name: created_at
+    description: ''
+  - name: grn_id
+    description: ''
+  - name: id
+    description: ''
+  - name: notes
+    description: ''
+  - name: owner_id
+    description: ''
+  - name: parent_id
+    description: ''
+  - name: po_item_id
+    description: ''
+  - name: product_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: type
+    description: ''
+  - name: units
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: purchase_order_trip
+  description: ''
+  columns:
+  - name: arrived_at
+    description: ''
+  - name: arrived_by_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: created_by_id
+    description: ''
+  - name: fulfillment_request_id
+    description: ''
+  - name: id
+    description: ''
+  - name: loaded_quatity
+    description: ''
+  - name: loading_finished_at
+    description: ''
+  - name: no_of_carton_loaded
+    description: ''
+  - name: purchase_order_id
+    description: ''
+  - name: received_at
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: started_at
+    description: ''
+  - name: transporter_id
+    description: ''
+  - name: truck_number
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: qa_order
+  description: ''
+  columns:
+  - name: assigned_on
+    description: ''
+  - name: auto_assign
+    description: ''
+  - name: created_at
+    description: ''
+  - name: due_date
+    description: ''
+  - name: end_date
+    description: ''
+  - name: id
+    description: ''
+  - name: incentive_snapshot
+    description: ''
+  - name: is_for_missing_inventory
+    description: ''
+  - name: is_incentivize
+    description: ''
+  - name: name
+    description: ''
+  - name: picked_by
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: started_on
+    description: ''
+  - name: start_date
+    description: ''
+  - name: status
+    description: ''
+  - name: type
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: raw_prod_grocer_db_account
+  description: ''
+  columns:
+  - name: id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: title
+    description: ''
+  - name: total_paid_credits
+    description: ''
+  - name: total_reward_points
+    description: ''
+  - name: user_id
+    description: ''
+  - name: _loader_batched_at
+    description: ''
+  - name: _loader_extracted_at
+    description: ''
+  - name: _loader_received_at
+    description: ''
+  - name: _loader_sequence
+    description: ''
+  - name: _loader_table_version
+    description: ''
+- name: raw_prod_grocer_db_activity
+  description: ''
+  columns:
+  - name: action_type
+    description: ''
+  - name: context_id
+    description: ''
+  - name: context_type
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: payload
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: timestamp
+    description: ''
+  - name: user_id
+    description: ''
+  - name: _loader_batched_at
+    description: ''
+  - name: _loader_extracted_at
+    description: ''
+  - name: _loader_received_at
+    description: ''
+  - name: _loader_sequence
+    description: ''
+  - name: _loader_table_version
+    description: ''
+- name: raw_prod_grocer_db_adjustment_log
+  description: ''
+  columns:
+  - name: adjusted_at
+    description: ''
+  - name: adjusted_by_id
+    description: ''
+  - name: adjusted_commute
+    description: ''
+  - name: adjusted_extra
+    description: ''
+  - name: adjusted_return
+    description: ''
+  - name: changes
+    description: ''
+  - name: comment
+    description: ''
+  - name: id
+    description: ''
+  - name: order_id
+    description: ''
+  - name: ride_order_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: _loader_batched_at
+    description: ''
+  - name: _loader_extracted_at
+    description: ''
+  - name: _loader_received_at
+    description: ''
+  - name: _loader_sequence
+    description: ''
+  - name: _loader_table_version
+    description: ''
+- name: raw_prod_grocer_db_adjustment_log_details
+  description: ''
+  columns:
+  - name: adjustment_log_id
+    description: ''
+  - name: comment
+    description: ''
+  - name: id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: type
+    description: ''
+  - name: value
+    description: ''
+  - name: _loader_batched_at
+    description: ''
+  - name: _loader_extracted_at
+    description: ''
+  - name: _loader_received_at
+    description: ''
+  - name: _loader_sequence
+    description: ''
+  - name: _loader_table_version
+    description: ''
+- name: raw_prod_grocer_db_airlift_grocer_wp_db_agp_usermeta
+  description: ''
+  columns:
+  - name: user_id
+    description: ''
+  - name: _loader_batched_at
+    description: ''
+  - name: _loader_extracted_at
+    description: ''
+  - name: _loader_received_at
+    description: ''
+  - name: _loader_sequence
+    description: ''
+  - name: _loader_table_version
+    description: ''
+  - name: __sdc_primary_key
+    description: ''
+- name: raw_prod_grocer_db_app_banner
+  description: ''
+  columns:
+  - name: categoryid
+    description: ''
+  - name: entityid
+    description: ''
+  - name: id
+    description: ''
+  - name: imageurl
+    description: ''
+  - name: is_active
+    description: ''
+  - name: purpose
+    description: ''
+  - name: rank
+    description: ''
+  - name: redirectiontype
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: type
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: _loader_batched_at
+    description: ''
+  - name: _loader_extracted_at
+    description: ''
+  - name: _loader_received_at
+    description: ''
+  - name: _loader_sequence
+    description: ''
+  - name: _loader_table_version
+    description: ''
+- name: raw_prod_grocer_db_attendance_data
+  description: ''
+  columns:
+  - name: attendance_time
+    description: ''
+  - name: attendance_type
+    description: ''
+  - name: checkin_time
+    description: ''
+  - name: checkout_time
+    description: ''
+  - name: id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: user_attendance_id
+    description: ''
+  - name: user_id
+    description: ''
+  - name: _loader_batched_at
+    description: ''
+  - name: _loader_extracted_at
+    description: ''
+  - name: _loader_received_at
+    description: ''
+  - name: _loader_sequence
+    description: ''
+  - name: _loader_table_version
+    description: ''
+- name: raw_prod_grocer_db_batch
+  description: ''
+  columns:
+  - name: barcode
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: packer_assigned_on
+    description: ''
+  - name: packer_id
+    description: ''
+  - name: picker_assigned_on
+    description: ''
+  - name: picker_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: trolley_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: _loader_batched_at
+    description: ''
+  - name: _loader_extracted_at
+    description: ''
+  - name: _loader_received_at
+    description: ''
+  - name: _loader_sequence
+    description: ''
+  - name: _loader_table_version
+    description: ''
+- name: raw_prod_grocer_db_batch_orders
+  description: ''
+  columns:
+  - name: batch_id
+    description: ''
+  - name: order_id
+    description: ''
+  - name: _loader_batched_at
+    description: ''
+  - name: _loader_extracted_at
+    description: ''
+  - name: _loader_received_at
+    description: ''
+  - name: _loader_sequence
+    description: ''
+  - name: _loader_table_version
+    description: ''
+- name: raw_prod_grocer_db_black_list_order
+  description: ''
+  columns:
+  - name: customer_id
+    description: ''
+  - name: id
+    description: ''
+  - name: order_detail
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: _loader_batched_at
+    description: ''
+  - name: _loader_extracted_at
+    description: ''
+  - name: _loader_received_at
+    description: ''
+  - name: _loader_sequence
+    description: ''
+  - name: _loader_table_version
+    description: ''
+- name: raw_prod_grocer_db_brand
+  description: ''
+  columns:
+  - name: company_id
+    description: ''
+  - name: id
+    description: ''
+  - name: is_default
+    description: ''
+  - name: name
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: _loader_batched_at
+    description: ''
+  - name: _loader_extracted_at
+    description: ''
+  - name: _loader_received_at
+    description: ''
+  - name: _loader_sequence
+    description: ''
+  - name: _loader_table_version
+    description: ''
+- name: raw_prod_grocer_db_cancel_request
+  description: ''
+  columns:
+  - name: id
+    description: ''
+  - name: order_woocommerce_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: _loader_batched_at
+    description: ''
+  - name: _loader_extracted_at
+    description: ''
+  - name: _loader_received_at
+    description: ''
+  - name: _loader_sequence
+    description: ''
+  - name: _loader_table_version
+    description: ''
+- name: raw_prod_grocer_db_cart
+  description: ''
+  columns:
+  - name: amount
+    description: ''
+  - name: cart_client_id
+    description: ''
+  - name: cart_state
+    description: ''
+  - name: device_id
+    description: ''
+  - name: device_type
+    description: ''
+  - name: id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: user_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: _loader_batched_at
+    description: ''
+  - name: _loader_extracted_at
+    description: ''
+  - name: _loader_received_at
+    description: ''
+  - name: _loader_sequence
+    description: ''
+  - name: _loader_table_version
+    description: ''
+- name: region
+  description: ''
+  columns:
+  - name: country_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: name
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: replenishment_model
+  description: ''
+  columns:
+  - name: barcode
+    description: ''
+  - name: bulk_package_size
+    description: ''
+  - name: category
+    description: ''
+  - name: class
+    description: ''
+  - name: daily_sales
+    description: ''
+  - name: daily_sales_adj
+    description: ''
+  - name: days
+    description: ''
+  - name: db_desired_inventory_level
+    description: ''
+  - name: db_min_inventory_level
+    description: ''
+  - name: db_soft_buffer_level
+    description: ''
+  - name: desired_days_inventory
+    description: ''
+  - name: desired_inventory_level
+    description: ''
+  - name: distributor
+    description: ''
+  - name: distributor_cost_price
+    description: ''
+  - name: distributor_id
+    description: ''
+  - name: first_check_in
+    description: ''
+  - name: growth_factor
+    description: ''
+  - name: high_perishable
+    description: ''
+  - name: hours_oos_adj
+    description: ''
+  - name: inventory_days
+    description: ''
+  - name: in_active
+    description: ''
+  - name: in_active_reason
+    description: ''
+  - name: is_centralized
+    description: ''
+  - name: is_dead_sku
+    description: ''
+  - name: min_days_inventory
+    description: ''
+  - name: min_inventory_level
+    description: ''
+  - name: mothership_inventory
+    description: ''
+  - name: mrp
+    description: ''
+  - name: pct_margin_post_tax
+    description: ''
+  - name: product_id
+    description: ''
+  - name: product_name
+    description: ''
+  - name: qty_to_order
+    description: ''
+  - name: qty_to_order_individual_units
+    description: ''
+  - name: quantity_sold
+    description: ''
+  - name: revenue
+    description: ''
+  - name: rn
+    description: ''
+  - name: selling_price
+    description: ''
+  - name: sku
+    description: ''
+  - name: sku_type
+    description: ''
+  - name: soft_buffer_days
+    description: ''
+  - name: soft_buffer_level
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: status
+    description: ''
+  - name: subcategory
+    description: ''
+  - name: total_orders
+    description: ''
+  - name: unique_orders
+    description: ''
+  - name: units
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: GROUP
+    description: ''
+- name: replishment_model
+  description: ''
+  columns:
+  - name: barcode
+    description: ''
+  - name: bulk_package_size
+    description: ''
+  - name: category
+    description: ''
+  - name: class
+    description: ''
+  - name: daily_sales
+    description: ''
+  - name: daily_sales_adj
+    description: ''
+  - name: days
+    description: ''
+  - name: db_desired_inventory_level
+    description: ''
+  - name: db_min_inventory_level
+    description: ''
+  - name: db_soft_buffer_level
+    description: ''
+  - name: desired_days_inventory
+    description: ''
+  - name: desired_inventory_level
+    description: ''
+  - name: first_check_in
+    description: ''
+  - name: growth_factor
+    description: ''
+  - name: high_perishable
+    description: ''
+  - name: hours_oos_adj
+    description: ''
+  - name: inventory_days
+    description: ''
+  - name: in_active
+    description: ''
+  - name: in_active_reason
+    description: ''
+  - name: is_centralized
+    description: ''
+  - name: is_dead_sku
+    description: ''
+  - name: min_days_inventory
+    description: ''
+  - name: min_inventory_level
+    description: ''
+  - name: mothership_inventory
+    description: ''
+  - name: mrp
+    description: ''
+  - name: pct_margin_post_tax
+    description: ''
+  - name: product_id
+    description: ''
+  - name: product_name
+    description: ''
+  - name: qty_to_order
+    description: ''
+  - name: qty_to_order_individual_units
+    description: ''
+  - name: quantity_sold
+    description: ''
+  - name: revenue
+    description: ''
+  - name: selling_price
+    description: ''
+  - name: sku
+    description: ''
+  - name: sku_type
+    description: ''
+  - name: soft_buffer_days
+    description: ''
+  - name: soft_buffer_level
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: status
+    description: ''
+  - name: subcategory
+    description: ''
+  - name: supplier
+    description: ''
+  - name: supplier_cost_price
+    description: ''
+  - name: supplier_id
+    description: ''
+  - name: total_orders
+    description: ''
+  - name: unique_orders
+    description: ''
+  - name: units
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: GROUP
+    description: ''
+- name: return_order
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: order_ids
+    description: ''
+  - name: rider_contact
+    description: ''
+  - name: rider_id
+    description: ''
+  - name: rider_name
+    description: ''
+  - name: ride_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: tags
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: reward_transaction
+  description: ''
+  columns:
+  - name: account_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: current_rewards
+    description: ''
+  - name: expiry
+    description: ''
+  - name: id
+    description: ''
+  - name: is_expired
+    description: ''
+  - name: metadata
+    description: ''
+  - name: previous_rewards
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: type
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: updated_rewards
+    description: ''
+  - name: used_rewards
+    description: ''
+- name: ride
+  description: ''
+  columns:
+  - name: completion_location_type
+    description: ''
+  - name: created_at
+    description: ''
+  - name: created_by
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: device_id
+    description: ''
+  - name: dispatching_mode
+    description: ''
+  - name: id
+    description: ''
+  - name: is_heavy_order_ride
+    description: ''
+  - name: meta_data
+    description: ''
+  - name: parent_ride_id
+    description: ''
+  - name: return_estimated_distance
+    description: ''
+  - name: return_eta_duration
+    description: ''
+  - name: rider_assigned_on
+    description: ''
+  - name: rider_completed_at
+    description: ''
+  - name: rider_id
+    description: ''
+  - name: rider_returned_to_warehouse_on
+    description: ''
+  - name: ride_accepted_at
+    description: ''
+  - name: shift_worker_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: total_price
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: rider
+  description: ''
+  columns:
+  - name: block_status
+    description: ''
+  - name: contact_number
+    description: ''
+  - name: created_at
+    description: ''
+  - name: current_badge_tier_snapshot
+    description: ''
+  - name: eligible_for_signup_bonus
+    description: ''
+  - name: fcm
+    description: ''
+  - name: first_name
+    description: ''
+  - name: id
+    description: ''
+  - name: in_passive_supply
+    description: ''
+  - name: is_active
+    description: ''
+  - name: is_eligible_for_referral_bonus
+    description: ''
+  - name: last_name
+    description: ''
+  - name: latest_referral_orders_tier
+    description: ''
+  - name: referral_bonus_tiers
+    description: ''
+  - name: referred_by_id
+    description: ''
+  - name: rider_affiliate_id
+    description: ''
+  - name: signup_bonus_tiers
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: username
+    description: ''
+  - name: user_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: rider_affiliate
+  description: ''
+  columns:
+  - name: affiliate_bonus_tiers
+    description: ''
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: name
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: rider_badge_stats
+  description: ''
+  columns:
+  - name: accepted_rides
+    description: ''
+  - name: badge_tiers_snapshot
+    description: ''
+  - name: created_at
+    description: ''
+  - name: current_badge
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: end_timestamp
+    description: ''
+  - name: id
+    description: ''
+  - name: orders_completed
+    description: ''
+  - name: rejected_rides
+    description: ''
+  - name: rider_id
+    description: ''
+  - name: shifts_completed
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_timestamp
+    description: ''
+  - name: timely_deliveries
+    description: ''
+  - name: updated_at
+    description: ''
+- name: rider_blocking_log
+  description: ''
+  columns:
+  - name: actor_id
+    description: ''
+  - name: blocking_type
+    description: ''
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: other_reason
+    description: ''
+  - name: payload
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_id
+    description: ''
+- name: rider_blocking_log_reason
+  description: ''
+  columns:
+  - name: block_log_id
+    description: ''
+  - name: reason_id
+    description: ''
+- name: rider_blocking_reason
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: reasontype
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: text
+    description: ''
+  - name: updated_at
+    description: ''
+- name: rider_break
+  description: ''
+  columns:
+  - name: allotted_time_in_minutes
+    description: ''
+  - name: break_timer_settings
+    description: ''
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: shift_worker_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: rider_break_time_log
+  description: ''
+  columns:
+  - name: comments
+    description: ''
+  - name: created_at
+    description: ''
+  - name: created_by_id
+    description: ''
+  - name: duration
+    description: ''
+  - name: id
+    description: ''
+  - name: rider_break_id
+    description: ''
+  - name: source
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: rider_login_log
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: device_id
+    description: ''
+  - name: id
+    description: ''
+  - name: rider_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: rider_payment_log
+  description: ''
+  columns:
+  - name: amount
+    description: ''
+  - name: comments
+    description: ''
+  - name: dispatch_date
+    description: ''
+  - name: dt
+    description: ''
+  - name: orders
+    description: ''
+  - name: rider_id
+    description: ''
+  - name: rider_name
+    description: ''
+  - name: ride_id
+    description: ''
+  - name: shift_date
+    description: ''
+  - name: shift_detail_id
+    description: ''
+  - name: shift_worker_id
+    description: ''
+  - name: transaction_date_in_utc
+    description: ''
+  - name: transaction_type
+    description: ''
+  - name: warehouse
+    description: ''
+  - name: worker_transaction_id
+    description: ''
+- name: rider_shift
+  description: ''
+  columns:
+  - name: break_timer_id
+    description: ''
+  - name: capacity
+    description: ''
+  - name: created_at
+    description: ''
+  - name: days_of_the_week
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: end_date
+    description: ''
+  - name: end_time
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: price
+    description: ''
+  - name: role_type_id
+    description: ''
+  - name: rules
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_date
+    description: ''
+  - name: start_time
+    description: ''
+  - name: supply_type
+    description: ''
+  - name: title
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: rider_shift_detail
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: end_time
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: shift_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_time
+    description: ''
+  - name: updated_at
+    description: ''
+- name: rider_shift_detail_changes
+  description: ''
+  columns:
+  - name: break_timer_id
+    description: ''
+  - name: capacity
+    description: ''
+  - name: created_at
+    description: ''
+  - name: date
+    description: ''
+  - name: disable_break_timer
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: min_orders_threshold
+    description: ''
+  - name: price
+    description: ''
+  - name: rules
+    description: ''
+  - name: shift_detail_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: supply_type
+    description: ''
+  - name: updated_at
+    description: ''
+- name: rider_shift_worker
+  description: ''
+  columns:
+  - name: attendance_marked_at
+    description: ''
+  - name: attendance_status
+    description: ''
+  - name: confirmation_marked_at
+    description: ''
+  - name: created_at
+    description: ''
+  - name: date
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: end_time
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: orders_completed
+    description: ''
+  - name: payment_made
+    description: ''
+  - name: rides_accepted
+    description: ''
+  - name: rides_rejected
+    description: ''
+  - name: shift_detail_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_time
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_id
+    description: ''
+- name: ride_orders
+  description: ''
+  columns:
+  - name: arrived_marked_outside_geofence
+    description: ''
+  - name: badge_buffer
+    description: ''
+  - name: badge_buffered_duration
+    description: ''
+  - name: commute_distance
+    description: ''
+  - name: commute_duration
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: delivered_marked_outside_geofence
+    description: ''
+  - name: distance_from_order_location_when_arrived
+    description: ''
+  - name: distance_from_order_location_when_delivered
+    description: ''
+  - name: end_time
+    description: ''
+  - name: estimated_distance
+    description: ''
+  - name: eta_buffer
+    description: ''
+  - name: eta_duration
+    description: ''
+  - name: extra_distance
+    description: ''
+  - name: extra_duration
+    description: ''
+  - name: id
+    description: ''
+  - name: marked_arrive_by_admin
+    description: ''
+  - name: order_delivered_at
+    description: ''
+  - name: order_id
+    description: ''
+  - name: order_picked_at
+    description: ''
+  - name: original_eta_duration
+    description: ''
+  - name: return_distance
+    description: ''
+  - name: return_duration
+    description: ''
+  - name: rider_arrived_at
+    description: ''
+  - name: ride_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_time
+    description: ''
+  - name: total_distance
+    description: ''
+  - name: updated_at
+    description: ''
+- name: role
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: metadata
+    description: ''
+  - name: name
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: role_mapping
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: role_id
+    description: ''
+  - name: role_job
+    description: ''
+  - name: role_name
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: sales_distribution
+  description: ''
+  columns:
+  - name: city_cum_sum
+    description: ''
+  - name: city_name
+    description: ''
+  - name: city_pct
+    description: ''
+  - name: country
+    description: ''
+  - name: dt
+    description: ''
+  - name: group_city_cum_sum
+    description: ''
+  - name: group_city_pct
+    description: ''
+  - name: group_cum_sum
+    description: ''
+  - name: group_pct
+    description: ''
+  - name: id
+    description: ''
+  - name: national_cum_sum
+    description: ''
+  - name: national_pct
+    description: ''
+  - name: sales_hour
+    description: ''
+  - name: GROUP
+    description: ''
+- name: sales_distributon
+  description: ''
+  columns:
+  - name: city_cum_sum
+    description: ''
+  - name: city_name
+    description: ''
+  - name: city_pct
+    description: ''
+  - name: country
+    description: ''
+  - name: group_city_cum_sum
+    description: ''
+  - name: group_city_pct
+    description: ''
+  - name: group_cum_sum
+    description: ''
+  - name: group_pct
+    description: ''
+  - name: id
+    description: ''
+  - name: national_cum_sum
+    description: ''
+  - name: national_pct
+    description: ''
+  - name: sales_hour
+    description: ''
+  - name: GROUP
+    description: ''
+- name: settings
+  description: ''
+  columns:
+  - name: context
+    description: ''
+  - name: country_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: group
+    description: ''
+  - name: id
+    description: ''
+  - name: key
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: value
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: shift
+  description: ''
+  columns:
+  - name: break_timer_id
+    description: ''
+  - name: capacity
+    description: ''
+  - name: created_at
+    description: ''
+  - name: days_of_the_week
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: end_date
+    description: ''
+  - name: end_time
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: price
+    description: ''
+  - name: role_type_id
+    description: ''
+  - name: rules
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_date
+    description: ''
+  - name: start_time
+    description: ''
+  - name: supply_type
+    description: ''
+  - name: title
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: shift_detail
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: end_time
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: shift_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_time
+    description: ''
+  - name: updated_at
+    description: ''
+- name: shift_detail_changes
+  description: ''
+  columns:
+  - name: break_timer_id
+    description: ''
+  - name: capacity
+    description: ''
+  - name: created_at
+    description: ''
+  - name: date
+    description: ''
+  - name: disable_break_timer
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: min_orders_threshold
+    description: ''
+  - name: price
+    description: ''
+  - name: rules
+    description: ''
+  - name: shift_detail_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: supply_type
+    description: ''
+  - name: updated_at
+    description: ''
+- name: shift_detail_changes_workforce_management
+  description: ''
+  columns:
+  - name: capacity
+    description: ''
+  - name: created_at
+    description: ''
+  - name: date
+    description: ''
+  - name: disable_break_timer
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: kpis
+    description: ''
+  - name: shift_detail_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: shift_detail_workforce_management
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: deleted_time
+    description: ''
+  - name: end_time
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: shift_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_time
+    description: ''
+  - name: updated_at
+    description: ''
+- name: shift_workder_workforce_management
+  description: ''
+  columns:
+  - name: attendance_marked_at
+    description: ''
+  - name: attendance_status
+    description: ''
+  - name: created_at
+    description: ''
+  - name: date
+    description: ''
+  - name: end_time
+    description: ''
+  - name: first_name
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: last_name
+    description: ''
+  - name: orders_completed
+    description: ''
+  - name: order_count
+    description: ''
+  - name: payment_made
+    description: ''
+  - name: remaining_break_timer
+    description: ''
+  - name: shift_detail_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_time
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: username
+    description: ''
+  - name: user_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: shift_worker
+  description: ''
+  columns:
+  - name: attendance_marked_at
+    description: ''
+  - name: attendance_status
+    description: ''
+  - name: confirmation_marked_at
+    description: ''
+  - name: created_at
+    description: ''
+  - name: date
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: end_time
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: orders_completed
+    description: ''
+  - name: payment_made
+    description: ''
+  - name: rides_accepted
+    description: ''
+  - name: rides_rejected
+    description: ''
+  - name: shift_detail_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_time
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_id
+    description: ''
+- name: shift_worker_package
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: end_time
+    description: ''
+  - name: first_name
+    description: ''
+  - name: last_name
+    description: ''
+  - name: request_count
+    description: ''
+  - name: shift_detail_id
+    description: ''
+  - name: shift_id
+    description: ''
+  - name: shift_worker_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_time
+    description: ''
+  - name: status
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: worker_id
+    description: ''
+- name: shift_worker_workforce_management
+  description: ''
+  columns:
+  - name: attendance_marked_at
+    description: ''
+  - name: attendance_status
+    description: ''
+  - name: created_at
+    description: ''
+  - name: date
+    description: ''
+  - name: end_time
+    description: ''
+  - name: first_name
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: last_name
+    description: ''
+  - name: orders_completed
+    description: ''
+  - name: order_count
+    description: ''
+  - name: pause_break_timer
+    description: ''
+  - name: payment_made
+    description: ''
+  - name: remaining_break_timer
+    description: ''
+  - name: shift_detail_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_time
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: username
+    description: ''
+  - name: user_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: shift_workforce_management
+  description: ''
+  columns:
+  - name: capacity
+    description: ''
+  - name: created_at
+    description: ''
+  - name: days_of_the_week
+    description: ''
+  - name: end_date
+    description: ''
+  - name: end_time
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: role_type_id
+    description: ''
+  - name: rules
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_date
+    description: ''
+  - name: start_time
+    description: ''
+  - name: title
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: sub_type
+  description: ''
+  columns:
+  - name: allow_manual_escalation
+    description: ''
+  - name: auto_creation
+    description: ''
+  - name: auto_escalation
+    description: ''
+  - name: auto_resolution
+    description: ''
+  - name: created_at
+    description: ''
+  - name: description
+    description: ''
+  - name: designations
+    description: ''
+  - name: functions
+    description: ''
+  - name: id
+    description: ''
+  - name: instruction
+    description: ''
+  - name: meta_data_rules
+    description: ''
+  - name: name
+    description: ''
+  - name: reason
+    description: ''
+  - name: resolution_rules
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: ticket_assignment_type
+    description: ''
+  - name: ticket_nature
+    description: ''
+  - name: ticket_type_id
+    description: ''
+  - name: title
+    description: ''
+  - name: type
+    description: ''
+  - name: type_config
+    description: ''
+  - name: updated_at
+    description: ''
+- name: sub_type_warehouse
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: sub_type_id
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouseid
+    description: ''
+- name: supplier
+  description: ''
+  columns:
+  - name: address
+    description: ''
+  - name: bank_name
+    description: ''
+  - name: created_at
+    description: ''
+  - name: credit_lines_in_days
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: email
+    description: ''
+  - name: iban
+    description: ''
+  - name: id
+    description: ''
+  - name: internal_warehouse_id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: is_internal
+    description: ''
+  - name: is_price_locked
+    description: ''
+  - name: name
+    description: ''
+  - name: ntn
+    description: ''
+  - name: payment_method
+    description: ''
+  - name: phone
+    description: ''
+  - name: sales_tax_registered
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: strn
+    description: ''
+  - name: updated_at
+    description: ''
+- name: supplier_accessible_warehouses
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: delivery_days
+    description: ''
+  - name: distributor_company_name
+    description: ''
+  - name: distributor_id
+    description: ''
+  - name: distributor_point_of_contact_email
+    description: ''
+  - name: distributor_point_of_contact_name
+    description: ''
+  - name: distributor_point_of_contact_phone
+    description: ''
+  - name: distributor_point_of_contact_position
+    description: ''
+  - name: id
+    description: ''
+  - name: payment_method
+    description: ''
+  - name: point_of_contact_email
+    description: ''
+  - name: point_of_contact_name
+    description: ''
+  - name: point_of_contact_phone
+    description: ''
+  - name: point_of_contact_position
+    description: ''
+  - name: secondary_point_of_contact_email
+    description: ''
+  - name: secondary_point_of_contact_name
+    description: ''
+  - name: secondary_point_of_contact_phone
+    description: ''
+  - name: secondary_point_of_contact_position
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: supplier_direct_access
+    description: ''
+  - name: supplier_id
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: supplier_product
+  description: ''
+  columns:
+  - name: bulk_package_size
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: delivery_method
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: lead_time
+    description: ''
+  - name: mrp
+    description: ''
+  - name: price_visible_on_packaging
+    description: ''
+  - name: product_id
+    description: ''
+  - name: rank
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: supplier_id
+    description: ''
+  - name: supplier_sku
+    description: ''
+  - name: tax
+    description: ''
+  - name: unit_price
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: weightage
+    description: ''
+- name: supply_metrics
+  description: ''
+  columns:
+  - name: arrival_rate
+    description: ''
+  - name: fulfillment_rate_given_arrival
+    description: ''
+  - name: lead_time_avg
+    description: ''
+  - name: lead_time_stddev
+    description: ''
+  - name: product_id
+    description: ''
+  - name: supplier_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: ticket
+  description: ''
+  columns:
+  - name: allow_manual_escalation
+    description: ''
+  - name: assigned_designation
+    description: ''
+  - name: assigned_function
+    description: ''
+  - name: assignee_id
+    description: ''
+  - name: assignee_name
+    description: ''
+  - name: attachments
+    description: ''
+  - name: city_id
+    description: ''
+  - name: close_time
+    description: ''
+  - name: context_id
+    description: ''
+  - name: context_type
+    description: ''
+  - name: country_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: created_by_id
+    description: ''
+  - name: current_rank
+    description: ''
+  - name: data
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: designations
+    description: ''
+  - name: feedback_comment
+    description: ''
+  - name: feedback_response
+    description: ''
+  - name: functions
+    description: ''
+  - name: id
+    description: ''
+  - name: is_escalated
+    description: ''
+  - name: is_snoozed
+    description: ''
+  - name: meta_data
+    description: ''
+  - name: priority
+    description: ''
+  - name: resolution_actions
+    description: ''
+  - name: shift_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: ticket_number
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: ticket_action
+  description: ''
+  columns:
+  - name: action
+    description: ''
+  - name: comment
+    description: ''
+  - name: context_id
+    description: ''
+  - name: context_name
+    description: ''
+  - name: context_type
+    description: ''
+  - name: created_at
+    description: ''
+  - name: from_context_id
+    description: ''
+  - name: id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: ticket_id
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: username
+    description: ''
+  - name: user_id
+    description: ''
+- name: ticket_notification
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: description
+    description: ''
+  - name: docs_url
+    description: ''
+  - name: from_user_id
+    description: ''
+  - name: from_user_name
+    description: ''
+  - name: id
+    description: ''
+  - name: message
+    description: ''
+  - name: parent_id
+    description: ''
+  - name: seen
+    description: ''
+  - name: shift_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: ticket_id
+    description: ''
+  - name: to_user_id
+    description: ''
+  - name: to_user_name
+    description: ''
+  - name: type
+    description: ''
+  - name: updated_at
+    description: ''
+- name: ticket_sub_type
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: sub_type_id
+    description: ''
+  - name: ticket_id
+    description: ''
+  - name: updated_at
+    description: ''
+- name: ticket_trigger
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: priority
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: sub_type_id
+    description: ''
+  - name: type
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: value
+    description: ''
+- name: ticket_type
+  description: ''
+  columns:
+  - name: code
+    description: ''
+  - name: created_at
+    description: ''
+  - name: designations
+    description: ''
+  - name: functions
+    description: ''
+  - name: icon_url
+    description: ''
+  - name: id
+    description: ''
+  - name: meta_data_rules
+    description: ''
+  - name: name
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: type
+    description: ''
+  - name: type_config
+    description: ''
+  - name: updated_at
+    description: ''
+- name: top_distributor
+  description: ''
+  columns:
+  - name: bulk_package_size
+    description: ''
+  - name: category
+    description: ''
+  - name: distributor
+    description: ''
+  - name: distributor_cost_price
+    description: ''
+  - name: distributor_id
+    description: ''
+  - name: mrp
+    description: ''
+  - name: product_id
+    description: ''
+  - name: rank
+    description: ''
+  - name: subcategory
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: w_rank
+    description: ''
+  - name: GROUP
+    description: ''
+- name: top_supplier
+  description: ''
+  columns:
+  - name: bulk_package_size
+    description: ''
+  - name: mrp
+    description: ''
+  - name: product_id
+    description: ''
+  - name: rank
+    description: ''
+  - name: supplier
+    description: ''
+  - name: supplier_cost_price
+    description: ''
+  - name: supplier_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: w_rank
+    description: ''
+- name: transaction
+  description: ''
+  columns:
+  - name: account_id
+    description: ''
+  - name: actualized_cost_date
+    description: ''
+  - name: created_at
+    description: ''
+  - name: created_by_id
+    description: ''
+  - name: currency
+    description: ''
+  - name: description
+    description: ''
+  - name: id
+    description: ''
+  - name: metadata
+    description: ''
+  - name: method
+    description: ''
+  - name: previous_free_credits
+    description: ''
+  - name: previous_paid_credits
+    description: ''
+  - name: product_transaction_id
+    description: ''
+  - name: request
+    description: ''
+  - name: response
+    description: ''
+  - name: source_product_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: sub_transaction_type
+    description: ''
+  - name: type
+    description: ''
+  - name: udf_1
+    description: ''
+  - name: udf_2
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: updated_free_credits
+    description: ''
+  - name: updated_paid_credits
+    description: ''
+  - name: wallet_ids
+    description: ''
+- name: trolley_lot
+  description: ''
+  columns:
+  - name: available_count
+    description: ''
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: dismissal_reason
+    description: ''
+  - name: dismissed_by
+    description: ''
+  - name: expiry_date
+    description: ''
+  - name: id
+    description: ''
+  - name: input_count
+    description: ''
+  - name: inventory_change_id
+    description: ''
+  - name: is_dismissed
+    description: ''
+  - name: lot_number
+    description: ''
+  - name: manufacturer_batch_number
+    description: ''
+  - name: placement_batch_id
+    description: ''
+  - name: product_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: units
+    description: ''
+  - name: units_picked
+    description: ''
+  - name: units_placed
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: user
+  description: ''
+  columns:
+  - name: account_number
+    description: ''
+  - name: account_source
+    description: ''
+  - name: account_type
+    description: ''
+  - name: assigned_order_rules_ids
+    description: ''
+  - name: cnic
+    description: ''
+  - name: contact_number
+    description: ''
+  - name: created_at
+    description: ''
+  - name: credits
+    description: ''
+  - name: credits__fl
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: designation_id
+    description: ''
+  - name: fcm
+    description: ''
+  - name: first_name
+    description: ''
+  - name: function_id
+    description: ''
+  - name: id
+    description: ''
+  - name: in_passive_supply
+    description: ''
+  - name: is_active
+    description: ''
+  - name: is_otp_verified
+    description: ''
+  - name: last_name
+    description: ''
+  - name: password
+    description: ''
+  - name: personal_identification_number
+    description: ''
+  - name: personal_identification_type
+    description: ''
+  - name: referral_code
+    description: ''
+  - name: referred_by_id
+    description: ''
+  - name: source
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: username
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: user_attendance
+  description: ''
+  columns:
+  - name: attendance_status
+    description: ''
+  - name: available_days
+    description: ''
+  - name: checkin_time
+    description: ''
+  - name: checkout_time
+    description: ''
+  - name: created_at
+    description: ''
+  - name: date
+    description: ''
+  - name: full_day_minimum_hours
+    description: ''
+  - name: half_day_minimum_hours
+    description: ''
+  - name: id
+    description: ''
+  - name: is_full_day
+    description: ''
+  - name: is_half_day
+    description: ''
+  - name: is_late
+    description: ''
+  - name: late_time
+    description: ''
+  - name: no_show_time
+    description: ''
+  - name: roster_checkin_time
+    description: ''
+  - name: roster_checkout_time
+    description: ''
+  - name: roster_end_date
+    description: ''
+  - name: roster_id
+    description: ''
+  - name: roster_start_date
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: user_break_time_log
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: duration
+    description: ''
+  - name: id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_id
+    description: ''
+  - name: user_status
+    description: ''
+- name: user_detail
+  description: ''
+  columns:
+  - name: assigned_designation_id
+    description: ''
+  - name: assigned_function_id
+    description: ''
+  - name: city_id
+    description: ''
+  - name: country_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: last_activity_time
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_id
+    description: ''
+  - name: user_name
+    description: ''
+  - name: user_status
+    description: ''
+- name: user_device_token_user_service_db
+  description: ''
+  columns:
+  - name: advertisement_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: device_token
+    description: ''
+  - name: id
+    description: ''
+  - name: is_verified
+    description: ''
+  - name: platform
+    description: ''
+  - name: source
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_id
+    description: ''
+- name: user_role
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: role_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_id
+    description: ''
+- name: wallet
+  description: ''
+  columns:
+  - name: account_id
+    description: ''
+  - name: created_at
+    description: ''
+  - name: currency
+    description: ''
+  - name: free_credits
+    description: ''
+  - name: id
+    description: ''
+  - name: paid_credits
+    description: ''
+  - name: product_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: status
+    description: ''
+  - name: updated_at
+    description: ''
+- name: warehouse
+  description: ''
+  columns:
+  - name: address
+    description: ''
+  - name: auto_pilot
+    description: ''
+  - name: city_id
+    description: ''
+  - name: code
+    description: ''
+  - name: created_at
+    description: ''
+  - name: currency_id
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: deliveryendtime
+    description: ''
+  - name: deliverystarttime
+    description: ''
+  - name: dispatching_mode
+    description: ''
+  - name: display_name
+    description: ''
+  - name: enable_sponsored_ads
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: is_master_warehouse
+    description: ''
+  - name: is_packing_house
+    description: ''
+  - name: is_pause
+    description: ''
+  - name: name
+    description: ''
+  - name: operationendtime
+    description: ''
+  - name: operationstarttime
+    description: ''
+  - name: pause_reason_id
+    description: ''
+  - name: region_id
+    description: ''
+  - name: show_oos_products
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_type
+    description: ''
+  - name: woocommerce_id
+    description: ''
+  - name: zone_id
+    description: ''
+- name: warehouse_detail
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: deliveryendtime
+    description: ''
+  - name: deliverystarttime
+    description: ''
+  - name: id
+    description: ''
+  - name: is_primary
+    description: ''
+  - name: operationendtime
+    description: ''
+  - name: operationstarttime
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: warehouse_pause_detail
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: customer_impacted
+    description: ''
+  - name: end_time
+    description: ''
+  - name: id
+    description: ''
+  - name: is_scheduled
+    description: ''
+  - name: job_id
+    description: ''
+  - name: order_impacted
+    description: ''
+  - name: pause_reason_id
+    description: ''
+  - name: revenue_lost
+    description: ''
+  - name: service_area_impacted
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_time
+    description: ''
+  - name: status
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: warehouse_pause_reason
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: created_by_id
+    description: ''
+  - name: description
+    description: ''
+  - name: for_system_use
+    description: ''
+  - name: id
+    description: ''
+  - name: image_url
+    description: ''
+  - name: is_active
+    description: ''
+  - name: notify_user
+    description: ''
+  - name: pn_message
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: title
+    description: ''
+  - name: updated_at
+    description: ''
+- name: worker_order_stats
+  description: ''
+  columns:
+  - name: accepted
+    description: ''
+  - name: assigned
+    description: ''
+  - name: cancellation_requested
+    description: ''
+  - name: cancelled
+    description: ''
+  - name: completed
+    description: ''
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: missed
+    description: ''
+  - name: order_type
+    description: ''
+  - name: rejected
+    description: ''
+  - name: shift_worker_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_id
+    description: ''
+- name: worker_stats
+  description: ''
+  columns:
+  - name: accuracy_percentage
+    description: ''
+  - name: average_time_per_item
+    description: ''
+  - name: compensation_profile_type
+    description: ''
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: order_id
+    description: ''
+  - name: shift_detail_id
+    description: ''
+  - name: shift_worker_id
+    description: ''
+  - name: sku_unique_count
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: total_items
+    description: ''
+  - name: total_time
+    description: ''
+  - name: total_volumetric_weight
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+  - name: worker_id
+    description: ''
+- name: worker_transaction
+  description: ''
+  columns:
+  - name: actualized_cost_date
+    description: ''
+  - name: additional_information
+    description: ''
+  - name: amount
+    description: ''
+  - name: closing_balance
+    description: ''
+  - name: comments
+    description: ''
+  - name: created_at
+    description: ''
+  - name: created_by_id
+    description: ''
+  - name: deleted_at
+    description: ''
+  - name: description
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: order_id
+    description: ''
+  - name: ride_id
+    description: ''
+  - name: shift_worker_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_deleted_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: sub_transaction_type
+    description: ''
+  - name: transaction_type
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_id
+    description: ''
+- name: workforce_break_time_log
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: id
+    description: ''
+  - name: meta
+    description: ''
+  - name: shift_worker_id
+    description: ''
+  - name: source
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: timestamp
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: user_status
+    description: ''
+- name: workforce_shift
+  description: ''
+  columns:
+  - name: capacity
+    description: ''
+  - name: created_at
+    description: ''
+  - name: days_of_the_week
+    description: ''
+  - name: end_date
+    description: ''
+  - name: end_time
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: role_type_id
+    description: ''
+  - name: rules
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_date
+    description: ''
+  - name: start_time
+    description: ''
+  - name: title
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: workforce_shift_detail
+  description: ''
+  columns:
+  - name: created_at
+    description: ''
+  - name: deleted_time
+    description: ''
+  - name: end_time
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: shift_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_time
+    description: ''
+  - name: updated_at
+    description: ''
+- name: workforce_shift_detail_changes
+  description: ''
+  columns:
+  - name: capacity
+    description: ''
+  - name: created_at
+    description: ''
+  - name: date
+    description: ''
+  - name: disable_break_timer
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: kpis
+    description: ''
+  - name: shift_detail_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: updated_at
+    description: ''
+- name: workforce_shift_worker
+  description: ''
+  columns:
+  - name: attendance_marked_at
+    description: ''
+  - name: attendance_status
+    description: ''
+  - name: created_at
+    description: ''
+  - name: date
+    description: ''
+  - name: end_time
+    description: ''
+  - name: first_name
+    description: ''
+  - name: id
+    description: ''
+  - name: is_active
+    description: ''
+  - name: last_name
+    description: ''
+  - name: orders_completed
+    description: ''
+  - name: order_count
+    description: ''
+  - name: pause_break_timer
+    description: ''
+  - name: payment_made
+    description: ''
+  - name: remaining_break_timer
+    description: ''
+  - name: shift_detail_id
+    description: ''
+  - name: src_created_at
+    description: ''
+  - name: src_updated_at
+    description: ''
+  - name: start_time
+    description: ''
+  - name: updated_at
+    description: ''
+  - name: username
+    description: ''
+  - name: user_id
+    description: ''
+  - name: warehouse_id
+    description: ''
+- name: test
+  columns:
+  - name: product_id
+    description: foo
+  - name: warehouse_id
+    description: bar
+  - name: first_check_in
+    description: football
