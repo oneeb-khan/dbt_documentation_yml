@@ -1,6 +1,3 @@
-'''
-Extract Individual contribution history when required
-'''
 import gspread
 import yaml
 import sys
